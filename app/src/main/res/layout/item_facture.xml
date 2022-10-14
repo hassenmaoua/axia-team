@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/item_facture_background"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/etat_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="1dp"
+        android:layout_weight="0"
+        app:srcCompat="@drawable/ic_autre" />
+
+    <TextView
+        android:id="@+id/reference"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="FA22000001"
+        android:textColor="@color/primary"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="16sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp" />
+
+    <TextView
+        android:id="@+id/intituleTiers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Fournisseur"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="16sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp" />
+
+    <TextView
+        android:id="@+id/montantTTC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="32 142.800"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:autoSizeMaxTextSize="14sp"
+        app:autoSizeMinTextSize="10sp"
+        app:autoSizeStepGranularity="2sp" />
+
+</LinearLayout>

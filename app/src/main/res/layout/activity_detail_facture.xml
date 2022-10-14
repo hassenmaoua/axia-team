@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".DetailFactureActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/top_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/close_facture" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/lineView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logo_societe"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/titreLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/societeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="Facture N°"
+                    android:textColor="@color/primary"
+                    android:textIsSelectable="true"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/reference_facture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0000000000"
+                    android:textColor="@color/primary"
+                    android:textIsSelectable="true"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/societeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/raisonSociale_societe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/primary"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tél : "
+                        android:textColor="@color/primary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/telephone_societe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:textIsSelectable="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email : "
+                        android:textColor="@color/primary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/email_societe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:textIsSelectable="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Addresse : "
+                        android:textColor="@color/primary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/adresse_societe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:textIsSelectable="true"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titreLayout">
+
+                <LinearLayout
+                    android:id="@+id/dateLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="En date du: "
+                        android:textColor="@color/primary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dateDoc_facture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/projetLayout"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dateLayout">
+
+                    <TextView
+                        android:id="@+id/nomProjet_facture"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/phaseProjet_facture"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/intituleTier_facture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:gravity="start"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:text="            "
+                        android:textAlignment="gravity"
+                        android:textColor="@color/primary"
+                        android:textStyle="bold"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <TextView
+                        android:id="@+id/tier_information_facture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="0dp"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/gray" />
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.604"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_stroke"
+                        android:paddingStart="3dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="3dp"
+                        android:paddingBottom="10dp"
+                        android:text="N°"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_stroke"
+                        android:gravity="right"
+                        android:paddingStart="3dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="3dp"
+                        android:paddingBottom="10dp"
+                        android:text="Désignation"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="30dp"
+                        android:layout_column="2"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_stroke"
+                        android:gravity="right"
+                        android:paddingStart="3dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="3dp"
+                        android:paddingBottom="10dp"
+                        android:text="Qté"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_column="3"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_stroke"
+                        android:gravity="right"
+                        android:paddingStart="3dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="3dp"
+                        android:paddingBottom="10dp"
+                        android:text="PU HT"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_column="4"
+                        android:layout_weight="1"
+                        android:background="@drawable/table_stroke"
+                        android:gravity="right"
+                        android:paddingStart="3dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="3dp"
+                        android:paddingBottom="10dp"
+                        android:text="Taxe"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_column="5"
+                        android:layout_weight="1"
+                        android:background="#F0F0F0"
+                        android:gravity="right"
+                        android:paddingStart="3dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="3dp"
+                        android:paddingBottom="10dp"
+                        android:text="Total HT"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </TableLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:divider="@color/primary"
+                android:orientation="vertical"
+                android:showDividers="middle|beginning|end"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+                <LinearLayout
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="Total HT : "
+                        android:textColor="@color/primary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/montantHT_facture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/gray"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/devise_facture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:paddingStart="4dp"
+                        android:textColor="@color/gray"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="Total HT NET : "
+                        android:textColor="@color/primary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/montantNetHT_facture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/gray"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/devise_facture2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:paddingStart="4dp"
+                        android:textColor="@color/gray"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="TVA :"
+                        android:textColor="@color/primary" />
+
+                    <TextView
+                        android:id="@+id/montantTVA_facture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/gray" />
+
+                    <TextView
+                        android:id="@+id/devise_facture3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:paddingStart="4dp"
+                        android:textColor="@color/gray"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="Total TTC : "
+                        android:textColor="@color/primary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/montantTTC_facture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/gray"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/devise_facture4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:paddingStart="4dp"
+                        android:textColor="@color/gray"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="NET à payer : "
+                        android:textColor="@color/primary"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/NETapayer_facture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd"
+                        android:textColor="@color/gray"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/devise_facture5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:paddingStart="4dp"
+                        android:textColor="@color/gray"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/montant_en_lettres_facture"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="textEnd"
+                android:textColor="@color/gray"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/lineView2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/top_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/intitule_societe_facture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineView2" />
+
+    <ImageButton
+        android:id="@+id/close_facture"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_close_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="92dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:drawableStart="@drawable/ic_baseline_print_24"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Imprimer"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/close_facture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/close_facture"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

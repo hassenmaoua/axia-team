@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="260dp"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background_menu"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_account_circle"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:autoSizeMaxTextSize="26sp"
+        app:autoSizeMinTextSize="12sp"
+        app:autoSizeStepGranularity="2sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/secondary" />
+
+    <LinearLayout
+        android:id="@+id/accueil_nav_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:text="@string/accueil"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:autoSizeMaxTextSize="16sp"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeStepGranularity="2sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/achat_nav_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_achat" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:text="@string/achat"
+            android:textColor="@color/white"
+            app:autoSizeMaxTextSize="16sp"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeStepGranularity="2sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/projet_nav_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_projet" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:text="@string/projet"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vente_nav_button"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="0"
+            android:src="@drawable/ic_vente" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:text="@string/vente"
+            android:textColor="@color/white"
+            app:autoSizeMaxTextSize="16sp"
+            app:autoSizeMinTextSize="12sp"
+            app:autoSizeStepGranularity="2sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/deconnexion_nav_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="0"
+                android:src="@drawable/ic_exit"
+                android:tint="@color/secondary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:text="@string/deconnexion"
+                android:textColor="@color/secondary"
+                app:autoSizeMaxTextSize="16sp"
+                app:autoSizeMinTextSize="12sp"
+                app:autoSizeStepGranularity="2sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

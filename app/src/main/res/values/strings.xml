@@ -1,0 +1,23 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name">Axia Teams</string>
+
+    <!-- Account -->
+    <string name="enter_e_p">Entrer votre Email et Mot de passe</string>
+
+    <string name="achat">Achat</string>
+    <string name="vente">Vente</string>
+    <string name="projet">Projet</string>
+
+    <string name="login">Login</string>
+
+    <string name="accueil">Accueil</string>
+    <string name="deconnexion">Déconnexion</string>
+
+
+    <string name="navigation_drawer_open">Navigation Drawer Open</string>
+    <string name="navigation_drawer_close">Navigation Drawer Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

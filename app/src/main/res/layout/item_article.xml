@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="0"
+        android:layout_weight="1"
+        android:background="@drawable/table_stroke">
+
+        <TextView
+            android:id="@+id/num_article"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="1"
+        android:layout_weight="1"
+        android:background="@drawable/table_stroke">
+
+        <TextView
+            android:id="@+id/designation_article"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|top"
+            android:maxWidth="150dp"
+            android:minHeight="30dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:paddingBottom="10dp"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textIsSelectable="true"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="2"
+        android:layout_weight="1"
+        android:background="@drawable/table_stroke">
+
+        <TextView
+            android:id="@+id/quantite_article"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="3"
+        android:layout_weight="1"
+        android:background="@drawable/table_stroke">
+
+        <TextView
+            android:id="@+id/prixUnitaire_article"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:autoSizeMaxTextSize="12sp"
+            app:autoSizeMinTextSize="10sp"
+            app:autoSizeStepGranularity="1sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="4"
+        android:layout_weight="1"
+        android:background="@drawable/table_stroke">
+
+        <TextView
+            android:id="@+id/montantTVA_article"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:autoSizeMaxTextSize="12sp"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeStepGranularity="1sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_column="5"
+        android:layout_weight="1"
+        android:background="#F0F0F0">
+
+        <TextView
+            android:id="@+id/montantHT_article"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="normal"
+            app:autoSizeMaxTextSize="10sp"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeStepGranularity="1sp" />
+    </FrameLayout>
+
+</TableRow>

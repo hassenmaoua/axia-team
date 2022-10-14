@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/achat_button.xml" value="0.1565" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/axia_logo.xml" value="0.202" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/bottom_bar.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/bottom_navigation_selector.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/buttom_bar.xml" value="0.194" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/button.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/button_filter.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/circle.xml" value="0.14" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/circle_shape.xml" value="0.2005" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/custom_indicator.xml" value="0.2115" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/custom_progress.xml" value="0.2105" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/custom_progressbar_blank.xml" value="0.2115" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/custom_progressbar_drawable.xml" value="0.2105" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/dashboard.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/details_shape.xml" value="0.204" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/facture_divider.xml" value="0.163" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_achat.xml" value="0.1565" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_annuler.xml" value="0.1635" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_arrow_back.xml" value="0.1635" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_arrow_down.xml" value="0.2115" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_arrow_forward.xml" value="0.2115" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_arrow_up.xml" value="0.2115" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_autre.xml" value="0.1635" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_baseline_attach_money_24.xml" value="0.187" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.1485" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_baseline_crop_free_24.xml" value="0.187" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_baseline_crop_square_24.xml" value="0.1485" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_baseline_filter_alt_24.xml" value="0.1485" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_baseline_menu.xml" value="0.1455" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.194" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1485" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_baseline_show_chart_24.xml" value="0.1955" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_launcher_background.xml" value="0.194" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_nouveau.xml" value="0.1635" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_projet.xml" value="0.1565" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_valide.xml" value="0.1635" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/ic_vente.xml" value="0.1565" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/input_field.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/input_hint.xml" value="0.18" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/item_facture_background.xml" value="0.2115" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/number_picker_divider.xml" value="0.2115" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/progress_bar.xml" value="0.1485" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/progress_bar_fill.xml" value="0.1485" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/projet_state.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/search_input.xml" value="0.194" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/search_view.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/tab_indicator_default.xml" value="0.183" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/tab_indicator_selected.xml" value="0.183" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/tab_selector.xml" value="0.183" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/table_stroke.xml" value="0.163" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/top_bar.xml" value="0.194" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/drawable/underline.xml" value="0.194" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout-v21/activity_achat.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout-v21/fragment_document.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout-v21/menu_drawer.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/activity_accueil.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/activity_achat.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/activity_detail_facture.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/activity_detail_projet.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/activity_main.xml" value="0.67" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/activity_navigation.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/activity_projet.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/activity_vente.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/custom_dialog.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/custom_dialog_2.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/fragment_achat.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/fragment_blank.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/fragment_document.xml" value="0.15" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/fragment_projet.xml" value="0.18" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/fragment_tache.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/fragment_vente.xml" value="0.22" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/item_achat.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/item_article.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/item_date_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/item_details_tache.xml" value="0.25" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/item_facture.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/item_facture_achat.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/item_projet.xml" value="0.67" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/item_tache.xml" value="0.5571030640668524" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/item_tache_details.xml" value="0.4004106776180698" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/item_vente.xml" value="0.2" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/list_item.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/menu_drawer_layout.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/satatique_fragment.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/statique_frame.xml" value="0.5" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/layout/vente_item.xml" value="0.18" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/menu/filter_date_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/menu/filter_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/menu/main_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/menu/toolbar_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidStudioProjects/AxiaTeams/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1485" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.15" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

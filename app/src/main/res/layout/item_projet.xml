@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:background="@drawable/projet_icon"
+    android:gravity="center|center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/grid_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/ic_wallpaper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="Titre Projet"
+        android:textColor="@color/primary"
+        android:textSize="20sp"
+        app:autoSizeMaxTextSize="20sp"
+        app:autoSizeMinTextSize="18sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/state_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grid_image" />
+
+    <TextView
+        android:id="@+id/state_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:paddingHorizontal="8dp"
+        android:text="state"
+        android:textAlignment="center"
+        android:textColor="@color/secondary"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="16sp"
+        app:autoSizeMinTextSize="14sp"
+        app:autoSizeStepGranularity="2sp"
+        app:autoSizeTextType="uniform"
+        app:drawableTint="@color/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

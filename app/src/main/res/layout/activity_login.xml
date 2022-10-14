@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/axia_logo">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="162dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="160dp"
+                android:text="@string/login"
+                android:textAlignment="center"
+                android:textColor="@color/primary"
+                android:textSize="36sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/labelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="@string/enter_e_p"
+                android:textAlignment="center"
+                android:textColor="@color/primary"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/login" />
+
+            <EditText
+                android:id="@+id/email_input"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="52dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/input_field"
+
+
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/primary"
+                android:textColorHint="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelText"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/input_hint"
+                android:paddingHorizontal="5sp"
+                android:text="Entrer votre Email"
+                android:textColor="@color/primary"
+                app:layout_constraintBottom_toBottomOf="@+id/email_input"
+                app:layout_constraintStart_toStartOf="@+id/email_input" />
+
+            <EditText
+                android:id="@+id/password_input"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/input_field"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:paddingStart="15dp"
+                android:paddingEnd="40dp"
+                android:textColor="@color/primary"
+                android:textColorHint="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/email_input"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/input_hint"
+                android:paddingHorizontal="5sp"
+                android:text="Entrer votre Mot de passe"
+                android:textColor="@color/primary"
+                app:layout_constraintBottom_toBottomOf="@+id/password_input"
+                app:layout_constraintStart_toStartOf="@+id/password_input" />
+
+            <ImageButton
+                android:id="@+id/password_visibility_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:background="#00FFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/password_input"
+                app:layout_constraintEnd_toEndOf="@+id/password_input"
+                app:layout_constraintTop_toTopOf="@+id/password_input"
+                app:srcCompat="@drawable/ic_visibility_off"
+                app:tint="@color/secondary"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/oublier_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="50dp"
+                android:text="Mot de passe oublier?"
+                android:textAlignment="textEnd"
+                android:textColor="@color/secondary"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password_input" />
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="80dp"
+                android:background="@drawable/button"
+                android:text="LOGIN"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/password_input" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/axia_logo"
+
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/logo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

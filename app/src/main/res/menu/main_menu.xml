@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary">
+
+        <item android:title="@string/achat"
+        android:icon="@drawable/ic_achat"
+        android:id="@+id/achat"
+        app:showAsAction="never"/>
+
+        <item android:title="@string/projet"
+        android:icon="@drawable/ic_projet"
+            app:showAsAction="never"/>
+
+        <item android:title="@string/vente"
+        android:icon="@drawable/ic_vente"
+        android:id="@+id/vente"
+        app:showAsAction="never"/>
+
+        <item android:title="@string/deconnexion"
+        android:icon="@drawable/ic_exit"
+            app:showAsAction="never"/>
+
+</menu>

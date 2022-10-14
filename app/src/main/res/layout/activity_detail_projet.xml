@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_projet_drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:hapticFeedbackEnabled="false"
+    tools:context=".DetailProjetActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarThumbVertical="@color/gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/details_constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/photo_image"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:contentDescription="Projet Image"
+                            android:src="@drawable/ic_projet"
+                            app:civ_border_color="@color/primary"
+                            app:civ_shadow_color="@color/gray"
+                            app:civ_shadow_radius="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/state_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/details_shape"
+                            android:paddingStart="5dp"
+                            android:paddingTop="2dp"
+                            android:paddingEnd="5dp"
+                            android:paddingBottom="2dp"
+                            android:text="                 "
+                            android:textAlignment="center"
+                            android:textColor="@color/primary"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/static_progressBar"
+                            tools:ignore="TextContrastCheck,TextContrastCheck,SpeakableTextPresentCheck" />
+
+                        <ProgressBar
+                            android:id="@+id/static_progressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="12dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:progress="0"
+                            android:progressDrawable="@drawable/custom_progress"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/photo_image" />
+
+                        <TextView
+                            android:id="@+id/progress_percent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0%"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/static_progressBar"
+                            app:layout_constraintEnd_toEndOf="@+id/static_progressBar"
+                            app:layout_constraintStart_toStartOf="@+id/static_progressBar"
+                            app:layout_constraintTop_toTopOf="@+id/static_progressBar"
+                            tools:ignore="TextContrastCheck" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <ScrollView
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:nestedScrollingEnabled="true"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:scrollbarStyle="insideOverlay"
+                        android:scrollbarThumbVertical="@color/gray"
+                        app:layout_constraintBottom_toBottomOf="@+id/constraintLayout"
+                        app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/constraintLayout">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fadeScrollbars="true"
+                            android:orientation="vertical"
+                            app:layout_constraintStart_toStartOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginBottom="2dp"
+                                    android:layout_weight="0"
+                                    android:background="@drawable/details_shape"
+                                    android:padding="2dp"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:text="Responsable"
+                                    android:textColor="@color/primary"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/nomResponsable"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center|start"
+                                    android:paddingStart="5dp"
+                                    android:paddingEnd="5dp"
+                                    android:text="nom complet"
+                                    android:textColor="@color/gray" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:layout_marginBottom="2dp"
+                                        android:layout_weight="0"
+                                        android:background="@drawable/details_shape"
+                                        android:padding="2dp"
+                                        android:paddingStart="5dp"
+                                        android:paddingEnd="5dp"
+                                        android:text="Date debut"
+                                        android:textColor="@color/primary"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="2dp"
+                                        android:layout_marginBottom="2dp"
+                                        android:layout_weight="0"
+                                        android:background="@drawable/details_shape"
+                                        android:padding="2dp"
+                                        android:paddingStart="5dp"
+                                        android:paddingEnd="5dp"
+                                        android:text="Date fin"
+                                        android:textColor="@color/primary"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/date_debut_projet"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:padding="2dp"
+                                        android:paddingStart="5dp"
+                                        android:paddingEnd="5dp"
+                                        android:text="01-01-1999"
+                                        android:textColor="@color/gray"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/date_fin_projet"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:gravity="center_vertical"
+                                        android:padding="2dp"
+                                        android:paddingStart="5dp"
+                                        android:paddingEnd="5dp"
+                                        android:text="01-01-2000"
+                                        android:textColor="@color/gray"
+                                        android:textSize="12sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:background="@drawable/details_shape"
+                                    android:padding="2dp"
+                                    android:text="Description"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/primary"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/description_projet"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/gray"
+                                    tools:ignore="TouchTargetSizeCheck" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </ScrollView>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/details_constraintLayout">
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/barChart"
+                        android:layout_width="0dp"
+                        android:layout_height="200dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/details_shape"
+                        android:focusableInTouchMode="false"
+                        android:padding="10dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ListView
+                        android:id="@+id/tache_listView"
+                        android:layout_width="0dp"
+                        android:layout_height="400dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:clipToPadding="false"
+                        android:dividerHeight="10dp"
+                        android:nestedScrollingEnabled="true"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:scrollbarStyle="insideOverlay"
+                        android:scrollbarThumbVertical="@color/secondary"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+                        tools:targetApi="lollipop" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/barChart">
+
+                        <SearchView
+                            android:id="@+id/tache_searchView"
+                            android:layout_width="0dp"
+                            android:layout_height="36dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/search_view"
+                            android:gravity="start|center_vertical"
+                            android:paddingBottom="4dp"
+                            android:queryHint="Rechercher une tache">
+
+                        </SearchView>
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/top_bar_projet_details"
+            android:overScrollMode="ifContentScrolls"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="80dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="normal|bold"
+                app:autoSizeMaxTextSize="18sp"
+                app:autoSizeMinTextSize="14sp"
+                app:autoSizeStepGranularity="2sp"
+                app:layout_constraintBottom_toBottomOf="@+id/detial_menu_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/detial_menu_button"
+                app:layout_constraintTop_toTopOf="@+id/detial_menu_button" />
+
+            <Button
+                android:id="@+id/detial_menu_button"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/ic_baseline_menu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:menu="@menu/main_menu"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageButton
+            android:id="@+id/closebtn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ic_baseline_close_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <include layout="@layout/menu_drawer_layout" />
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+
+
+
+
+

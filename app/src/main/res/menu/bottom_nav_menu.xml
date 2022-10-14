@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/achat"
+        android:icon="@drawable/ic_achat"
+        android:title="@string/achat" />
+    <item
+        android:id="@+id/projet"
+        android:icon="@drawable/ic_projet"
+        android:title="@string/projet" />
+    <item
+        android:id="@+id/vente"
+        android:icon="@drawable/ic_vente"
+        android:title="@string/vente" />
+</menu>
