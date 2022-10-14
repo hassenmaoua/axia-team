@@ -16,7 +16,7 @@ This application, which is part of the Axia team's website, has been developed t
 
 ## Screenshots
 
-| <img src="Screenshots/001.jpg" alt="001" style="width: 18%; margin: 1%;"> | <img src="Screenshots/002.jpg" alt="002" style="width: 18%; margin: 1%;"> | <img src="Screenshots/003.jpg" alt="003" style="width: 18%; margin: 1%;"> | <img src="Screenshots/004.jpg" alt="004" style="width: 18%; margin: 1%;"> | <img src="Screenshots/009.jpg" alt="009" style="width: 18%; margin: 1%;"> |
+<img src="Screenshots/001.jpg" alt="001" style="width: 18%; margin: 1%;"> | <img src="Screenshots/002.jpg" alt="002" style="width: 18%; margin: 1%;"> | <img src="Screenshots/003.jpg" alt="003" style="width: 18%; margin: 1%;"> | <img src="Screenshots/004.jpg" alt="004" style="width: 18%; margin: 1%;"> | <img src="Screenshots/009.jpg" alt="009" style="width: 18%; margin: 1%;">
 
 <img src="Screenshots/005.jpg" alt="005" style="width: 18%; margin: 1%;"> | <img src="Screenshots/006.jpg" alt="006" style="width: 18%; margin: 1%;"> | <img src="Screenshots/007.jpg" alt="007" style="width: 18%; margin: 1%;"> | <img src="Screenshots/008.jpg" alt="008" style="width: 18%; margin: 1%;"> | <img src="Screenshots/010.jpg" alt="010" style="width: 18%; margin: 1%;">
 
