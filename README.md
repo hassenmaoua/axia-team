@@ -17,9 +17,9 @@ This application, which is part of the Axia team's website, has been developed t
 ## Screenshots
 
 |:-------------------------:|:-------------------------:|
-|<img src="/hassenmaoua/axia-team/raw/master/Screenshots/001.jpg" alt="001" style="max-width: 40%;">|<img src="/hassenmaoua/axia-team/raw/master/Screenshots/002.jpg" alt="002" style="max-width: 40%;">|<img src="/hassenmaoua/axia-team/raw/master/Screenshots/003.jpg" alt="003" style="max-width: 40%;">|
-|<img src="/hassenmaoua/axia-team/raw/master/Screenshots/004.jpg" alt="004" style="max-width: 40%;">|<img src="/hassenmaoua/axia-team/raw/master/Screenshots/005.jpg" alt="005" style="max-width: 40%;">|<img src="/hassenmaoua/axia-team/raw/master/Screenshots/006.jpg" alt="006" style="max-width: 40%;">|
-|<img src="/hassenmaoua/axia-team/raw/master/Screenshots/007.jpg" alt="007" style="max-width: 40%;">|<img src="/hassenmaoua/axia-team/raw/master/Screenshots/009.jpg" alt="009" style="max-width: 40%;">|<img src="/hassenmaoua/axia-team/raw/master/Screenshots/010.jpg" alt="010" style="max-width: 40%;">|
+|<img src="Screenshots/001.jpg" alt="001" style="max-width: 40%;">|<img src="Screenshots/002.jpg" alt="002" style="max-width: 40%;">|<img src="Screenshots/003.jpg" alt="003" style="max-width: 40%;">|
+|<img src="Screenshots/004.jpg" alt="004" style="max-width: 40%;">|<img src="Screenshots/005.jpg" alt="005" style="max-width: 40%;">|<img src="Screenshots/006.jpg" alt="006" style="max-width: 40%;">|
+|<img src="Screenshots/007.jpg" alt="007" style="max-width: 40%;">|<img src="Screenshots/009.jpg" alt="009" style="max-width: 40%;">|<img src="Screenshots/010.jpg" alt="010" style="max-width: 40%;">|
 
 ## Implements
 
