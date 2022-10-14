@@ -33,7 +33,14 @@ This application, which is part of the Axia team's website, has been developed t
 This application was developed using the Axia Solution local web service API. I've altered the source code to render it static.
 These simple steps are available.
 
-1. When the application is opened, the user is required to authenticate. For the demonstration user: email: `user`, password: `123`.
+1. When the application is opened, the user is required to authenticate.
+
+For the demonstration user:
+
+```sh
+email: `user`
+password: `123`
+```
 
 2. The user would have access to the projects for which he is responsible and to all the purchase and sale invoices of his company.
 
