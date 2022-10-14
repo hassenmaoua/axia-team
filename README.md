@@ -37,9 +37,11 @@ These simple steps are available.
 
 For the demonstration user:
 
-```sh
-email: `user`
-password: `123`
+```json
+{
+    "email": "user",
+    "password": "123"
+}
 ```
 
 2. The user would have access to the projects for which he is responsible and to all the purchase and sale invoices of his company.
